@@ -1,4 +1,8 @@
 from os import system
+# Define Asciis
+
+
+def print()
 
 def caesar_explanation():
     print("Die Caesar-Verschlüsselung ist ein einfaches Verschlüsselungsverfahren, \nbei dem jeder Buchstabe im Klartext um eine feste Anzahl \nvon Stellen im Alphabet verschoben wird. \nZum Beispiel, bei einer Verschiebung um 3: \nA -> D, \nB -> E,\nC -> F.")
@@ -33,10 +37,15 @@ def caesar_explanation():
 
 def main():
     usr = ""
-    while usr not in ["start", "exit"]:
-        print ("start oder exit")
-        usr = input("\n")
-    if usr == "start":
+    while usr not in ["1", "2"]:
+        print ("#######################")
+        print ("# LECOS Lama Tour über die Verschlüsselungs-Wiese #")
+        print ("# 1. Start #")
+        print ('# 2. Exit # ')
+        print ("#######################")
+        print()
+        usr = input("Deine Nummer: ")
+    if usr == "1":
         caesar_explanation()
         
 
