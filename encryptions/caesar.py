@@ -1,5 +1,9 @@
+from os import system
+from main import nochmalDasGanze
 
 def caesar_explanation():
+    system("cls")
+
     print('''Die Caesar-Verschlüsselung ist ein einfaches Verschlüsselungsverfahren,
 bei dem jeder Buchstabe im Klartext um eine feste Anzahl von Stellen im Alphabet
 verschoben wird. 
@@ -11,7 +15,10 @@ Zum Beispiel, bei einer Verschiebung um 3:
     
     ''')
 
-def caesar_example(message):
+    print()
+    caesar_example()
+
+def caesar_example():
     print("Gib eine Nachricht ein: \n")
     message = input("> ")
     print("\nFür diese Verschlüsselung wird jetzt mit dem Faktor 10 verschlüsselt.\n")
@@ -32,5 +39,7 @@ def caesar_example(message):
     print('\nDeine ursprüngliche Nachricht:\t', message)
     print('Die verschlüsselte Nachricht:\t', encrypted_text,"\n")
 
+    if nochmalDasGanze():
+        caesar_explanation()
+    
 
-caesar_explanation()

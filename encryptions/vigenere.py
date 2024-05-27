@@ -1,5 +1,8 @@
+from os import system
+from main import nochmalDasGanze
 
 def vigenere_explanation():
+    system("cls")
     print('''Die Vigenere-Verschlüsselung ist ein Verschlüsselungsverfahren,
 bei dem jeder Buchstabe im Klartext um eine Anzahl von Stellen im Alphabet
 verschoben wird. Die jeweiligen Stellen, um die jeder Buchstabe verschoben
@@ -17,6 +20,8 @@ Hier wird als Beispiel mit dem Schlüssel "Lecos" verschlüsselt:
         -> da der dritte Buchstabe in "Lecos" an 14ter Stelle steht.
         -> 3 + 14 = 17 = R  
     ''')
+    print()
+    vigenere_example()
 
 def vigenere_example():
     print("Gib eine Nachricht ein: \n")
@@ -48,4 +53,6 @@ def vigenere_example():
     print('\nDeine ursprüngliche Nachricht:\t', message)
     print('Die verschlüsselte Nachricht:\t', encrypted_text,"\n")
 
+    if nochmalDasGanze():
 
+        vigenere_explanation()

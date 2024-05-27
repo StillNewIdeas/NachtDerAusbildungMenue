@@ -1,5 +1,8 @@
+from os import system
+from main import nochmalDasGanze
 
 def atbash_explanation():
+    system("cls")
     print('''Die Atbash-Verschlüsselung ist ein Verschlüsselungsverfahren,
 bei dem das Alphabet umgedreht wird.
 Wenn das Alphabet mit Umlauten so definiert ist:
@@ -10,6 +13,11 @@ dann findet folgender Tausch statt:
     "B" wird zu "ü"
     "C" wird zu "ä"
     ''')
+    
+    print()
+    atbash_example()
+
+
 
 def atbash_example():
     print("Gib eine Nachricht ein: \n")
@@ -33,6 +41,5 @@ def atbash_example():
     print('\nDeine ursprüngliche Nachricht:\t', message)
     print('Die verschlüsselte Nachricht:\t', encrypted_text,"\n")
 
-
-atbash_explanation()
-atbash_example()
+    if nochmalDasGanze():
+        atbash_explanation()
