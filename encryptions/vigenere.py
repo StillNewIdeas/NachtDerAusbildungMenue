@@ -24,8 +24,13 @@ Hier wird als Beispiel mit dem Schlüssel "Lecos" verschlüsselt:
     vigenere_example()
 
 def vigenere_example():
-    print("Gib eine Nachricht ein: \n")
-    message = input("> ")
+    try:
+        print("Gib eine Nachricht ein: \n")
+        message = input("> ")
+    except KeyboardInterrupt:
+        print("Keine gültige Eingabe")
+        vigenere_example()
+        
     print("\nFür diese Verschlüsselung wird jetzt mit dem Schlüssel 'Lecos GmbH' verschlüsselt.\n")
     key = "lecosgmbh"
     alphabet = 'abcdefghijklmnopqrstuvwxyzöäüß'
