@@ -22,7 +22,7 @@ def main():
         print('\t\t###############################\n')
 
         print('Gib die Nummer der Verschlüsselung ein, die du kennenlernen möchtest.')
-        usr = ""
+        usr = " "
         while usr not in ["1", "2","3"]:
             usr = input()
         if usr == "1":
