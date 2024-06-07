@@ -30,7 +30,7 @@ def main():
 
 def chooseEncryption():
         print('Gib die Nummer der Verschlüsselung ein, die du kennenlernen möchtest.')
-        usr = ""
+        usr = " "
         while usr not in ["1", "2","3"]:
             try:
                 usr = input()
