@@ -5,10 +5,7 @@ def nochmalDasGanze():
     print('Möchtest du eine weitere Nachricht verschlüssel?')
     usr = ""
     while usr not in ["j","n"]:
-        try:
-            usr = input('j/n: ')
-        except KeyboardInterrupt:
-            print("Keine gültige Eingabe")
+        usr = input('j/n: ')
                 
     if usr == 'j':
         return True
@@ -18,24 +15,20 @@ def nochmalDasGanze():
 def main():
     while True: 
         system("cls")
-        print('\n\t\t\t\t\t\t###############################')
-        print('\t\t\t\t\t\t# Lecos Verschlüsselungs-Tour #')
-        print('\t\t\t\t\t\t###############################')
-        print('\t\t\t\t\t\t#          1. Caesar          #')
-        print('\t\t\t\t\t\t#          2. Atbash          #')
-        print('\t\t\t\t\t\t#          3. Vigenere        #')
-        print('\t\t\t\t\t\t###############################\n')
+        print('\n\t\t###############################')
+        print('\t\t# Lecos Verschlüsselungs-Tour #')
+        print('\t\t###############################')
+        print('\t\t#          1. Caesar          #')
+        print('\t\t#          2. Atbash          #')
+        print('\t\t#          3. Vigenere        #')
+        print('\t\t###############################\n')
         
-        chooseEncryption()
 
-def chooseEncryption():
         print('Gib die Nummer der Verschlüsselung ein, die du kennenlernen möchtest.')
         usr = " "
         while usr not in ["1", "2","3"]:
-            try:
-                usr = input()
-            except KeyboardInterrupt:
-                print("Keine gültige Eingabe")
+            usr = input()
+            
         if usr == "1":
             from caesar import caesar_explanation
             caesar_explanation()

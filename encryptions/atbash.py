@@ -20,13 +20,9 @@ dann findet folgender Tausch statt:
 
 
 def atbash_example():
-    try:
-        print("Gib eine Nachricht ein: \n")
-        message = input("> ")
-    except KeyboardInterrupt:
-        print("Keine gültige Eingabe")
-        atbash_example()
-
+    print("Gib eine Nachricht ein: \n")
+    message = input("> ")
+    
     alphabet = 'abcdefghijklmnopqrstuvwxyzöäüß'
     reversed_alphabet = alphabet[::-1]
     atbash_dictionary = {original: reversed_value for original, reversed_value in zip(alphabet, reversed_alphabet)}

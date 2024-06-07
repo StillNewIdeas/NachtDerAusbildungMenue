@@ -19,13 +19,9 @@ Zum Beispiel, bei einer Verschiebung um 3:
     caesar_example()
 
 def caesar_example():
-    try:
-        print("Gib eine Nachricht ein: \n")
-        message = input("> ")
-    except KeyboardInterrupt:
-        print("Keine gültige Eingabe")
-        caesar_example()
-
+    print("Gib eine Nachricht ein: \n")
+    message = input("> ")
+    
     print("\nFür diese Verschlüsselung wird jetzt mit dem Faktor 10 verschlüsselt.\n")
     offset = 10
     alphabet = 'abcdefghijklmnopqrstuvwxyzöäüß'
